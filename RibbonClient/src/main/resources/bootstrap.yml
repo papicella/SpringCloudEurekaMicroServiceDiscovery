@@ -13,7 +13,3 @@ producer:
 security:
   basic:
     enabled: false
-
-#eureka:
-#  client:
-#    fetchRegistry: false

@@ -34,3 +34,6 @@ OR get discovery information for the service we are invoking
 pasapicella@pas-macbook:~$ curl http://localhost:8080/stock-service-info
 ---stock-service---
 Host:192.168.1.107, port:8081, uri:http://192.168.1.107:8081
+
+PCF Test ->
+
