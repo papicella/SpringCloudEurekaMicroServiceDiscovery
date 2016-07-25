@@ -37,3 +37,13 @@ Host:192.168.1.107, port:8081, uri:http://192.168.1.107:8081
 
 PCF Test ->
 
+$ curl "http://apples-ribbonclient-stolid-prestidigitator.cfapps.io/stock-test?symbol=IBM"
+
+OR
+
+$ curl "http://apples-ribbonclient-stolid-prestidigitator.cfapps.io/stock-service-info"
+
+pasapicella@pas-macbook:~/temp/demo/demo$ curl "http://apples-ribbonclient-stolid-prestidigitator.cfapps.io/stock-service-info"
+---stock-service---
+Host:apples-stock-service-ischiadic-ratline.cfapps.io, port:443, uri:https://apples-stock-service-ischiadic-ratline.cfapps.io:443
+
