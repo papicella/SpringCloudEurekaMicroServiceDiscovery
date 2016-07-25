@@ -1,0 +1,36 @@
+Call as follows from a Ribbon Client using the Euraka service URL under the covers ->
+
+eg:
+
+String serviceUri = "http://stock-service/services/stock?symbol=%s";
+
+--
+
+$ curl http://localhost:8080/stock-test?symbol=ORCL
+
+// [
+{
+"id": "419344"
+,"t" : "ORCL"
+,"e" : "NYSE"
+,"l" : "41.08"
+,"l_fix" : "41.08"
+,"l_cur" : "41.08"
+,"s": "0"
+,"ltt":"4:02PM EDT"
+,"lt" : "Jul 22, 4:02PM EDT"
+,"lt_dts" : "2016-07-22T16:02:27Z"
+,"c" : "+0.01"
+,"c_fix" : "0.01"
+,"cp" : "0.02"
+,"cp_fix" : "0.02"
+,"ccol" : "chg"
+,"pcls_fix" : "41.07"
+}
+]
+
+OR get discovery information for the service we are invoking
+
+pasapicella@pas-macbook:~$ curl http://localhost:8080/stock-service-info
+---stock-service---
+Host:192.168.1.107, port:8081, uri:http://192.168.1.107:8081

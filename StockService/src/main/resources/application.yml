@@ -1,0 +1,28 @@
+# Spring properties
+spring:
+  application:
+     name: stock-service  # Service registers under this name
+#  freemarker:
+#    enabled: false           # Ignore Eureka dashboard FreeMarker templates
+
+cloud:
+  services:
+    registrationMethod: route
+
+security:
+  basic:
+    enabled: false
+
+# HTTP Server
+server:
+  port: 8081   # HTTP (Tomcat) port
+
+# Discovery Server Access
+#  1. DEV ONLY: Reduce the lease renewal interval to speed up registration
+#  2. Define URL of registration server (defaultZone)
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10   # DO NOT DO THIS IN PRODUCTION

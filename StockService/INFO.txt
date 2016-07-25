@@ -1,0 +1,12 @@
+Call externally as follows ->
+
+$ curl http://localhost:8081/services/stock?symbol=ORCL
+
+For service call as follows use:
+
+$ curl http://localhost:8081/services/service-instances/stock-service
+
+Internally call from Eureka server using Ribbon as follows ->
+
+http://stock-service/services/stock?symbol=ORCL
+

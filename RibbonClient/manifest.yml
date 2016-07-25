@@ -1,0 +1,12 @@
+---
+applications:
+- name: apples-ribbonclient
+  memory: 512M
+  instances: 1
+  host: apples-ribbonclient-${random-word}
+  path: ./target/RibbonClient-0.0.1-SNAPSHOT.jar
+  services:
+    - apples-service-registery
+    - apples-circuit-breaker-dashboard
+
+
